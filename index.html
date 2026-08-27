@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My  website</title>
+        <meta name="viewport"contact="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet"href="style.css">
+    </head>
+    <body id="home">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <h1>Welcome I am Nikhil!</h1>
+        <section class="about" id="about">
+            <div class="about-card">
+                <h2>About Me</h2>
+                <p>I am learning HTML, CSS and JAVASCRIPT.</p>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+        <h2>My skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT
+        </ul>
+        </section>
+        <div class="card">
+            <img src="nikhil cse.png" alt="My profile"
+            <h2>NIKHIL</h2>
+            <p>I AM A WEB DEVELOPER</p>
+        <button
+         onclick="window.location.href='mailto:nikhilgoyal3412@gmail.com'"> CONTACT ME</button>
+         <button
+         onclick="window.open('https://wa.me/6268456814','_blank')">WHATSAPP ME</button>
+        </div>
+        <section class="contact" id="contact">
+            <h2>Contact gmail</h2>
+            <p>Email:nikhilgoyal3412@gmail.com</p>
+        </section>
+        <form onsubmit="sendEmail(event)">
+            <input type="text" placeholder="your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"required></textarea>
+            <button type="submit">send Message</button>
+        </from>
+        <footer>
+            <p>2026 NIKHIL | PORTFOLIO</p>
+        </footer>
+        <script>
+            function sendEmail(event) {
+                event.preventDefault();
+                const name = document.querySelector('input[type="text"]').value;
+                const email = document.querySelector('input[type="email"]').value;
+                const message = document.querySelector('textarea').value;
+                const subject = "portfolio Contact from" + name;
+                const body = " Nmae: " + name + "\nEmail:" + email + "\n\nMassage:\n" + message;
+                window.open("https://mail.google.com/mail/?view=cm&fs=1&to=nikhilgoyal3412@gmail.com&su=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body), "_blank");
+    
+            }
+        </script>
+    </body>
+</html>

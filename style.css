@@ -1,0 +1,261 @@
+body {
+    background-color: linear-gardient(135deg,rgb(15, 189, 247),white(190, 241, 6));
+    font-family:Arial;
+    text-align: center;
+}
+h1 {
+    color: darkblue;
+}
+h2{
+    color: rgb(237, 15, 15);
+}
+
+p {
+    font-size: 20px;
+}
+button {
+    background-color: black;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius: 8px;
+}
+.card {
+    background-color: :white;
+    width:350px;
+    margin:25px auto;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px gray;
+    border:1px solid lightgray;
+    line-height:1.5;
+}
+ .card  h2 {
+    color:darkblue;
+ }
+ .card p {
+    color:black;
+ }
+.card button {
+    background-color:#256eb;
+    color: white;
+    padding:12px 25px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer; 
+    transition:0.3s;
+ }
+ .card button;hover {
+    background-color: rgb(4, 43, 240);
+    transform:scale(1.1);
+ }
+.card img {
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 15px;
+}
+.card img {
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+nav {
+    background-color:darkblue;
+    padding:15px;
+    text-align:center;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+ nav a:hover {
+    color:#60a5fa:
+ }
+
+ nav {
+    display:flex;
+    justify-content: center;
+    gap:20px;
+
+ }
+ .About h2 {
+    color:darkblue;
+ }
+ ul {
+    list-style: none;
+    padding:0;
+ }
+ li {
+    margin:5px;
+ }
+ ul {
+    display:flex;
+    justify-content: center;
+    gap:20px;
+ }
+ li{
+    background-color: darkblue;
+    color:white;
+    padding:8px 15px;
+    border-radius: 8px;
+ }
+ .CONTACT {
+    background-color: white;
+    width:350px;
+    margin:25px auto;
+    padding:20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px gray;
+ }
+ .CONTACT h2 {
+    color:darkblue
+ }
+ .skills {
+    background-color: white;
+    width:350px;
+    margin:25px auto;
+    padding:20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px gray;
+}
+.skills h2 {
+    color:darkblue;
+}
+html {
+   scroll-behavior: smooth;
+}
+footer {
+   background-color: #111827;
+   color:white;
+   text-align: center;
+   padding:15px;
+   margin-top: 30px;
+}
+@media (max-width:600px) {
+   nav {
+      flex-direction: column;
+      gap:10px;
+   }
+   .card,
+   .about,
+   .skills,
+   .contact {
+      width:85%
+   }
+}
+.contact from {
+   display:flex;
+   flex-direction: column;
+   gap:12px;
+   width:350px;
+   margin:20px auto;
+}
+.contact input,
+.contact textarea {
+   padding:12px;
+   border:1px solid #ccc;
+   border-radius: 8px;
+   font-size: 16px;
+}
+.contact textarea {
+   height:120px;
+   resize: none;
+}
+.contact form button {
+   cursor: pointer;
+}
+@media (max-width:600px) {
+   nav a {
+      font-size: 16px;
+      margin:5px;
+   }
+   .card {
+      width:85%;
+      padding: 15px;
+   }
+   .contact form {
+      width: 85%;
+   }
+   hl {
+      font-size: 28px;
+   }
+}
+.about-card {
+   width:350px;
+   background-color: white;
+   padding:25px;
+   margin:25px auto;
+   border-radius: 15px;   
+   box-shadow: 0 4px 10px gray;
+   text-align: center;
+}
+.about.card h2 {
+   color:darkblue;
+   font-size: 28px;
+   margin-bottom: 15px;
+}
+.about-card p {
+   color: black;
+   font-size: 18px;
+}
+@media (max-width:600px) {
+   body {
+      width:100px;
+      margin:0;
+      padding:0;
+   }
+   nav {
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:5px;
+   }
+   nav a {
+      font-size: 14p;
+      margin:5px;
+   }
+   hl {
+      font-size: 28px;
+   }
+      h2 {
+         font-size: 24px;
+      }
+      p {
+         font-size: 16px;
+      }
+      .card,
+      .about-card,
+      .skills,
+      .contact {
+         width:85%;
+         max-width: 350px;
+         margin:20px auto;
+         padding:20px;
+         box-sizing: border-box;
+           }
+           .about-card h2 {
+            font-size: 26px;
+           }
+           .about-card p {
+            font-size: 16px;
+           }
+           .card img {
+            max-width: 130px;
+            height: 130px;
+           }
+           ul {
+            padding:0;
+            gap: 10px;
+            flex-wrap: wrap;
+
+           }
+         }
+
+   
