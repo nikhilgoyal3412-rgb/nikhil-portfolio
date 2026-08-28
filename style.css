@@ -257,5 +257,118 @@ footer {
 
            }
          }
-
-   
+         .contact form {
+            display:flex;
+            flex-direction: coloumn;
+            gap:12px;
+            width:90%;
+            margin:auto;
+         }
+         .contact form input,
+         .contact form textarea,
+         .contact form button {
+            width:100%;
+            box-sizing: border-box;
+         }
+         .contact form textarea {
+            min-height: 100px;
+         }
+         .contact form button {
+            padding: 12px;
+         }
+         form {
+            width:85%;
+            max-width: 500px;
+            margin:20px auto;
+            flex-direction: column;
+            gap:10px;
+         }
+         form input,
+         form textarea {
+            width:100%;
+            padding:12px;
+            box-sizing: border-box;
+            border:1px solid #ccc;
+            border-radius: 8px;
+         }
+         form textarea {
+            min-height: 100px;
+            resize: vertical;
+         }
+         form button {
+            padding:12px;
+            border:none;
+            border-radius: 8px;
+            cursor: pointer;
+         }
+         button {
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+         }
+         button:hover {
+         transform:scale(1.05);
+         }
+         #display {
+            font-size: 28px;
+            text-align: right;
+            padding:12px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+         }
+         .calculator {
+            padding:20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px gray;
+            width:300px;
+            margin:40px auto;
+         }   
+         .calculator {
+            display:grid;
+            gap:10px;
+         }
+         .calculator-buttons {
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:10px;
+         }
+         .calculator-buttons button {
+            height:55px;
+            font-size: 20px;
+         }
+         button[onclick*=operator] {
+            font-weight: bold;
+         }
+         button[onclick*="clear"] {
+            font-weight: bold;
+         }
+         button[onclick*="clearDisplay"] {
+            font-weight: bold;
+         }
+         @media (max-width: 500px) {
+            .calculator {
+               width:90%;
+               margin:20px auto;
+            }
+            .calculator-buttons button {
+               height:50px;
+               font-size: 18px;
+            }
+         }
+         #contact {
+            width:80%;
+            max-width: 600px;
+            margin:50px auto;
+            padding:30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #aaa;
+         }
+         #contact h2 {
+            margin-bottom: 20px;
+         }
+         #contact p {
+            margin:12px 0;
+            font-size: 17px;
+          
+         }
