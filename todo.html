@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nikhil To-Do App</title>
+        <style>
+            body {
+                font-family: Arial;
+                text-align: center;
+                background: #f2f2f2;
+                padding-top: 50px;
+            }
+            .todo {
+                width:350px;
+                margin:auto;
+                background: white;
+                padding:25px;
+                border-radius: 15px;
+                box-shadow: 0 0 15px #aaa;
+            }
+            input {
+                padding:12px;
+                width:220px;
+                font-size: 16px;
+            }
+            button {
+                padding:12px 15px;
+                cursor:pointer;
+            }
+            li {
+                list-style: none;
+                margin:10px;
+                padding:10px;
+                background: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="todo">
+            <h1>Nikhil To-Do App</h1>
+
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <button onclick="addTask()">Add</button>
+            <ul id="taskList"></ul>
+        </div>
+        <script>
+            function addTask() {
+                let input = document.getElementById("taskInput");
+                let task = input.value;
+                
+                if (task === "") {
+                    return;
+                }
+                let li = document.createElement("li");
+                li.innerHTML = task + ' <button onclick="this.parentElement.remove()">Delete</button>';
+                document.getElementById("taskList").appendChild(li);
+                document.getElementById("task").value = "";
+            }
+        </script>
+    </bodY>
+</html>
