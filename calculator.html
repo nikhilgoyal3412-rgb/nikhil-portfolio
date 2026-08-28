@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle>Nikhil Calculator</tittle>
+        <style>
+            body {
+                font-family: Arial;
+                text-align: center;
+                background: #f2f2f2;
+                padding-top: 50px;
+            }
+            .calculator {
+                width:300px;
+                margin:auto;
+                padding:20px;
+                background: white;
+                border-radius: 15px;
+                box-shadow: 0 0 15px #aaa;
+            }
+            #display {
+                width:100%;
+                height: 50px;
+                font-size: 24px;
+                text-align: 15px;
+                margin-bottom: 15px;
+            }
+            button {
+                width:60px;
+                height:50px;
+                margin:5px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div calss="calculator">
+            <h2>NIkhil Claculator</h2>
+            <input type="text" id="display" readonly>
+            <br>
+            <button onclick="clearDisplay()">c</button>
+            <button onclick="add('/')">/</button>
+            <button onclick="add('*')">*</button>
+            <button onclick="add('-')">-</button>
+            <br>
+            <button onclick="add('7')">7</button>
+            <button onclick="add('8')">8</button>
+            <button onclick="add('9')">9</button>
+            <button onclick="add('+')">+</button>
+            <br>
+            <button onclick="add('4')">4</button>
+            <button onclick="add('5')">5</button>
+            <button onclick="add('6')">6</button>
+            <button onclick="calculate()">=</button>
+            <br>
+            <button onclick="add('1')">1</button>
+            <button onclick="add('2')">2</button>
+            <button onclick="add('3')">3</button>
+            <button onclick="add('0')">0</button>
+        </div>
+        <script>
+            function add(value) {
+                document.getElementById("display").value+= value;
+            }
+            function clearDisplay() {
+                document.getElementById("display").value ="";
+            }
+            function calculate() {
+                let expression = document.getElementById("display").value;
+                if (expression === "") {
+                    return;
+                }
+                try {
+                    let answer = Function("return " + expression) ();
+                    document.getElementById("display").value = answer;
+                } catch (error) {
+                    document.getElementById("display").value ="Error";
+                }
+            }
+        </script>
+    </body>
+</html>
