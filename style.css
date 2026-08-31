@@ -1,5 +1,5 @@
 body {
-    background-color: linear-gardient(135deg,rgb(15, 189, 247),white(190, 241, 6));
+    background: radial-gradient(circle at 20% 20%,rgba(255,0,0,0.35),transparent 30%), radial-gradient(circle at 80% 80%,rba(120,0,0,0.4),transparent 35%),linear-gradient(135deg, #000000, #250000,#080000);
     font-family:Arial;
     text-align: center;
 }
@@ -372,3 +372,222 @@ footer {
             font-size: 17px;
           
          }
+         .project-container {
+            display:flex;
+            gap:20px;
+            flex-wrap: wrap;
+            padding:20px;
+         }
+
+         .project-card {
+            width:280px;
+            padding:35px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s ease;
+            box-sizing: border-box;
+         }
+         .project-card:hover {
+            transform: translate(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+         }
+         .project-card h3 {
+            margin-bottom: 12px;
+         }
+         .project-card p {
+            line-height: 1,6;
+            margin-bottom: 20px;
+         }
+         .project-card button {
+            padding:10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0,3s;
+         }
+         .project-card:hover {
+            transform: scale(1.05);
+         }
+         .social-card {
+            text-align: center;
+            margin:30px auto;
+         }
+         .social-buttons {
+            display:flex;
+            justify-content: center;
+            gap:20px;
+         }
+         @media (max-width:768) {
+            .project-container {
+               flex-direction: column;
+               align-items: center;
+            }
+            .project-card {
+               width:90%;
+               margin:15px auto;
+            }
+            .card {
+               width:90%;
+               margin:20px auto;
+            }
+            body {
+               overflow: hidden;
+            }
+         }
+         .project-container {
+            display: flex;
+            justify-content: center;
+            gap:25px;
+            flex-wrap: wrap;
+         }
+         .project-card {
+            background: white;
+            padding:25px;
+            border-radius: 15px;
+            width:280px;
+            box-shadow: 0 8px 20px rgb(0,0,0,0.12);
+            transition: 0.3s;
+         }
+         .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+         }
+         .project-card h3 {
+            color:#222;
+            margin-bottom: 12px;
+         }
+         .project-card p {
+            color:#555;
+            line-height: 1.6;
+         }
+         .project-card button {
+            background: #111827;
+            color:white;
+            border:none;
+            padding:10px 18px;
+            cursor:pointer;
+            border-radius: 8px;
+            margin-top: 12px;
+         }
+         .project-card button:hover {
+            background: #2563eb;
+         }
+         .project-card {
+            background: linear-gradient(135deg,#ffe600,#ffc400);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 12px 12px 0px #b58b00, 18px 18px 25px rgba(0,0,0,0.25);
+            transition: all o.3s ease;
+            transform: translateZ(0);
+         }
+         .project-card:hover {
+            transform: translate(-5px,-8px) rotateY(-4deg);
+            box-shadow: 18px 18px 0px #b58b00,25px 25px 30px rgba(0,0,0,0.3);
+         }
+         .card,
+         .social-card {
+            background: linear-gradient(135deg,#ffe600,#ffc400);
+            border-radius: 15px;
+            box-shadow: 12px 12px o #b58b00,18px 18px 25px rgba(0,0,0,0.25);
+            transition: 0.3s ease;
+         }
+         .card:hover,
+         .social-card:hover {
+            transform: translate(-6px,-8px) rotateY(-4deg);
+            box-shadow: 18px 18px 0 #b58b00,25px 25px 30px rgba(0,0,0,0.3);
+         }
+         #contact {
+            background: linear-gradient(135deg ,#ffe600, #ffc400);
+            border-radius: 15px;
+            padding:30px;
+            box-shadow: 12px 12px 0 #b58b00, 18px 18px 25px rgba(0,0,0,0.25);
+            transition: 0.3s ease;
+         }
+         #contact:hover {
+            transform: translate(-6px,-8px) rotateY(-4deg);
+            box-shadow: 18px 18px 0 #b58b00,25px 25px 30px rgba(0,0,0,0.3);
+         }
+         form {
+            background:linear-gradient(145deg,#ffd900,#ffb700);
+            padding:30px;
+            box-shadow: 12px 12px 0px #b88600,18px 18px 25px rgba(0,0,0,0.3);
+            margin:30px auto;
+            transition: 0.3s ease;
+         }
+         form:hover {
+            transform: translateY(-8px)rotateX(2deg);
+            box-shadow: 18px 18px 0px #b88600 25px 25px 30px rgba(0,0,0,0.35);
+         }
+            form input,
+            form textarea {
+               width:100%;
+               box-sizing: content-box;
+               padding:15px;
+               margin:8px 0;
+               border:none;
+               border-radius: 10px;
+               background: #fff8c4;
+               font-size: 16px;
+               outline:none;
+            }
+            form button {
+               background: #0645d8;
+               color:white;
+               border:none;
+               padding:14px 25px;
+               cursor:pointer;
+               font-weight: bold;
+               transition: 0.3s;
+            }
+            form button:hover {
+               transform: translateY(-3px);
+               box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            }
+            .about-card,
+            .skills {
+               background: linear-gradient(145deg, #ffd900,#ffb700);
+               border-radius: 18px;
+               box-shadow: 12px 12px 0px #b88600,18px 18px 25px rgba(0,0,0,0.3);
+               transition: 0.3S ease;
+            }
+            .about-card:hover,
+            .skills:hover {
+               transform: translateY(-8px) rotateX(2deg);
+               box-shadow: 18px 18px 0px #b88600, 25px 25px 30px rgba(0,0,0,0.35);
+            }
+            body {
+               background: linear-gradient(135deg, #000000 0%, #330000 50%, #990000 100%) ! important;
+               min-height: 100vh !important;
+            }
+            .logo {
+               font-size: 35px;
+               font-weight: 900;
+               color:#ffd700;
+               letter-spacing: 2px;
+               text-shadow: 0 0 10px #ffd700;
+               cursor: pointer;
+               transition: 0.4s;
+            }
+            .logo:hover {
+               transform: scale(1.2) rotate(-5deg);
+               text-shadow: 0 0 10px #ffd700,0 0 25px #ff0000;
+            }
+            .about-card,
+            .skills,
+            .project-card,
+            #contact {
+               opacity: 0;
+               transform: translateY(50px);
+               animation: appear 1s ease forwards;
+            }
+            @keyframes appear {
+               from{
+                  opacity: 0;
+                  transform: translateY(50px);
+               }
+               to {
+                  opacity: 1;
+                  transform: translateY(0);
+               }
+            }
+         
